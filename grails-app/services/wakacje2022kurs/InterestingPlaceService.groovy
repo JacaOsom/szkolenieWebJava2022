@@ -13,7 +13,7 @@ class InterestingPlaceService {
             ticketPrice: 100,
             timeToSpend: "2h")
 
-        Trip.findByEndPoint("Rzym").addToPlacesToVisit(toVisit).save(flush:true, failOnError: true)
+        Trip.findByEndPoint("Rzym").addToPlacesToVisit(toVisit).save(flush: true, failOnError: true)
         }
 
     def saveNewTrip(Trip trip){

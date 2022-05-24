@@ -19,7 +19,7 @@ class BasicController {
 //        myTrip.endDate = new Date()
 
 //        saveTrip(myTrip)
-        render Trip.findAllByStartingPointAndEndPoint("Gdańsk", "Rzym") as XML
+        render Trip.findAllByStartingPointAndEndPoint("Warszawa", "Rzym") as XML
 
 //        render (Trip.list() as XML)
 //        render (Trip.findAllByEndPoint("Rzym") as XML)
@@ -33,16 +33,16 @@ class BasicController {
         render "coś innego"
     }
 
-    def newTrip(){
-        Trip trip = new Trip(
-                name:"Oglądanie wielorybów",
-                startingPoint: "Gdańsk",
-                endPoint: "Bergen",
-                startDate: new Date(),
-                endDate: new Date()
-        )
-
-        interestingPlaceService.saveNewTrip(trip)
-        render trip as XML
-    }
+//    def newTrip(){
+//        Trip trip = new Trip(
+//                name:"Oglądanie wielorybów",
+//                startingPoint: "Gdańsk",
+//                endPoint: "Bergen",
+//                startDate: new Date(),
+//                endDate: new Date()
+//        )
+//
+//        interestingPlaceService.saveNewTrip(trip)
+//        render trip as XML
+//    }
 }
